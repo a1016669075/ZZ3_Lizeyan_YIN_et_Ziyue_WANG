@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/tp_javapro?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&useSSL=false
+    username: liyin
+    password: Aa199707098
+  jpa:
+    database: MySQL
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+  mvc:
+    converters:
+      preferred-json-mapper: gson
